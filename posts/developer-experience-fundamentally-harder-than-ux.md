@@ -30,14 +30,12 @@ I believe there are two reasons for the discrepancy between general UX and DX:
 
 ![ENIAC Computers](/images/eniac1.jpg "The good old days")
 
-1. . **Coding tools were around before UI/UX was a thing**.
+1. **Coding tools were around before UI/UX was a thing**.
 We&#39;ve simply gotten used to them: Dealing with the idiosyncracies of bash, vi, or the JavaScript type system have become a part of the professional hazing process.
 They may be suboptimal, _but they're ours!_
 This is compounded by the fact that the history of technology is so path dependent. In so many cases it is much easier and more profitable to build on something existing rather than reinvent the wheel. -- Even if the existing wheel is full of arbitrary decisions and in fact impediments to what you are trying to do. Just look at the long reign of the x86 architecture, or consider the fact that basically all Operating Systems these days follow the Unix architecture. The fact that JavaScript is what it is. -- I don&#39;t mean to say that these technologies are without merit, however they also have considerable flaws and it has been more efficient to work with and around than to replace them entirely.
 Certainly every mature technology will have to deal with technical debt in the inner workings of its guts. I have no bones with that. However, if the gory details are in the guts, then we coders are the GI surgeons having to deal with them. -- And we need sharper scalpels, better imaging and protective gear. In short: better tools.
-
 ![Chomsky Hierarchy](/images/chomsky_hierarchy.png "Theoretical CS was fun")
-
 2. **Fundamentally, programming is a Turing Complete business.**
 Compare most GUIs -- in terms of language complexity, the different states that the application interface can find itself in, would in the majority of cases correspond to regular languages (some may be context-free, but that&#39;s pushing it). The visual languages are &quot;flat&quot;, predictable, without feedback loops or long distance dependencies. It is in such an environment that UI/UX principles have been able to thrive.
 But what did our _Intro to Theoretical CS_ course teach us in college? You can&#39;t assume that statements about regular languages will still hold for Linearly Bounded Automata, let alone Turing Machines.
