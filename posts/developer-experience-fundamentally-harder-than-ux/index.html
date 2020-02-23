@@ -75,22 +75,26 @@
 </ul>
 <p>When was the last time you heard of a programming language discussed in terms of discoverability, succinctness, relevance, let alone beauty?</p>
 <p>I believe there are two reasons for the discrepancy between general UX and DX:</p>
+<p><img alt="ENIAC Computers" src="../../images/eniac1.jpg" title="The good old days"></p>
+<ol>
+<li>. <strong>Coding tools were around before UI/UX was a thing</strong>.
+We've simply gotten used to them: Dealing with the idiosyncracies of bash, vi, or the JavaScript type system have become a part of the professional hazing process.
+They may be suboptimal, <em>but they're ours!</em>
+This is compounded by the fact that the history of technology is so path dependent. In so many cases it is much easier and more profitable to build on something existing rather than reinvent the wheel. -- Even if the existing wheel is full of arbitrary decisions and in fact impediments to what you are trying to do. Just look at the long reign of the x86 architecture, or consider the fact that basically all Operating Systems these days follow the Unix architecture. The fact that JavaScript is what it is. -- I don't mean to say that these technologies are without merit, however they also have considerable flaws and it has been more efficient to work with and around than to replace them entirely.
+Certainly every mature technology will have to deal with technical debt in the inner workings of its guts. I have no bones with that. However, if the gory details are in the guts, then we coders are the GI surgeons having to deal with them. -- And we need sharper scalpels, better imaging and protective gear. In short: better tools.</li>
+</ol>
+<p><img alt="Chomsky Hierarchy" src="../../images/chomsky_hierarchy.jpg" title="Theoretical CS was fun"></p>
 <ol>
 <li>
-<p>. <strong>Coding tools were around before UI/UX was a thing</strong>.
-We've simply gotten used to them and dealing with the idiosyncracies of bash, vi, or the JavaScript type system have simply become part of the professional hazing process
-We kind of got stuck with some solutions that are sub-optimal, but we just got used to them.
-This is compounded by the fact that the history of technology is so path dependent. In so many cases it is much easier and more profitable to build on something existing than to reinvent the wheel, even if the existing wheel is full of arbitrary decisions and in fact impediments to what you are trying to do. Just look at the long reign of the x86 architecture, or consider the fact that basically all Operating Systems these days follow the Unix architecture. The fact that JavaScript is what it is. -- I don't mean to say that these technologies are without merit, however they also have considerable flaws and it has been more efficient to work with and around than to replace them entirely.</p>
-</li>
-<li>
-<p><strong>Fundamentally, programming is a Turing Complete business.</strong>
+<strong>Fundamentally, programming is a Turing Complete business.</strong>
 Compare most GUIs -- in terms of language complexity, the different states that the application interface can find itself in, would in the majority of cases correspond to regular languages (some may be context-free, but that's pushing it). The visual languages are "flat", predictable, without feedback loops or long distance dependencies. It is in such an environment that UI/UX principles have been able to thrive.
 But what did our <em>Intro to Theoretical CS</em> course teach us in college? You can't assume that statements about regular languages will still hold for Linearly Bounded Automata, let alone Turing Machines.
-Fundamental principles in conventional UI/UX design no longer apply when it comes to programming. DI/DX is a very, very special case UI/UX.</p>
-</li>
+Fundamental principles in conventional UI/UX design no longer apply when it comes to programming. DI/DX is a very, very special case UI/UX.</li>
 </ol>
 <p>So, what I believe has happened is that in many cases we programmers have tilted at windmills of trying to improve our tooling -- the eternal yak shave -- only to be thwarted by the complexity of our own work, inevitably giving up and going with the most rudimentary system capable of doing the job somehow, even if it sucks.</p>
 <h2>Toward better DX</h2>
+<p>deal with them. -- And we need sharper scalpels, better imaging and protective gear. In short: better tools.</p>
+<p><img alt="Ironman interface" src="../../images/futuristic_interface.jpg" title="This could be us but you coding"></p>
 <p>So, what's the alternative? Here are my suggestions for a world with better Developer Experience:</p>
 <ol>
 <li>
@@ -99,6 +103,10 @@ Fundamental principles in conventional UI/UX design no longer apply when it come
 <em>Address the many components that make up programming in concert</em>: Editor, shell, repl, language, version control host, cloud host and framework. Generally these pieces are not very aware of each other.</li>
 <li>
 <em>Search</em> -- It's our dirty little secret how much programming nowadays depends on Google. I find this topic fascinating and I'll write much more on it -- coming up!</li>
+<li>
+<em>Standardize fundamental questions</em> -- How do I run this thing? Where does the code start? Is my system configured correctly?</li>
+<li>
+<em>Intelligently hide details</em> -- Coding is about control, however understanding is not. Most environments throw up their hands and overwhelm you with the entire pile of everything the program does, in minute detail. Others take a different tack and try to hide the bitter realities behind magic -- impenetrable and beautiful until you inevitably <em>do</em> have to care about what's behind the curtain. Why do we have so few systems that would allow us to zoom in and out? <em>Get you a coding environment that can do both</em>.</li>
 <li>
 <em>Programming Languages are User Interfaces</em> -- The most fundamental unit of Developer Experience is the programming language. The Elm language is one of few examples where this reality was considered explicitly in the design process.</li>
 <li>
