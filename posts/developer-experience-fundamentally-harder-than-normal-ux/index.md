@@ -1,6 +1,6 @@
 <!--
-.. title: Developer Experience: Fundamentally harder than UX
-.. slug: developer-experience-fundamentally-harder-than-ux
+.. title: Developer Experience: Fundamentally harder than normal UX
+.. slug: developer-experience-fundamentally-harder-than-normal-ux
 .. date: 2020-02-22 23:34:01 UTC-06:00
 .. tags: 
 .. category: 
@@ -62,7 +62,7 @@ So, what&#39;s the alternative? Here are my suggestions for a world with better 
 6. _Coding is a social process_ -- The success of GitHub is a testament to this. I'm not sure, but maybe we can do more along those lines.
 7. _Programming Languages are User Interfaces_ -- The most fundamental unit of Developer Experience is the programming language. The Elm language is one of few examples where this reality was considered explicitly in the design process.
 8. _Programming is about empowering_ -- dumbing things down is _not_ enough. I believe minimalism is a cheap approach to UX in general, but it definitely doesn&#39;t work for DX -- it fundamentally misses the point of what programming is about: expressive power. I believe this is why many &quot;graphical&quot;/beginner programming languages have failed.
-9. _Engage with Theoretical Computer Science_ -- In a way we are hunting for UI widgets (or other kinds of artifacts) that can faithfully represent the full computational complexity of algorithms. This is the one area where [Bret Victor&#39;s](http://worrydream.com/) excellent work may have fallen short of what we ultimately need.
+9. _Engage with Theoretical Computer Science_ -- In a way we are hunting for UI widgets (or other kinds of artifacts) that can faithfully represent the full computational complexity of algorithms. I have been actively working on this front and it's a long term project that you hopefully will be hearing more about. This is also the one area where [Bret Victor&#39;s](http://worrydream.com/) excellent work may have fallen short of what we ultimately need.
 
 
 ![UX Meme](/images/why-ux-research-is-important.png "Just ship it!")
