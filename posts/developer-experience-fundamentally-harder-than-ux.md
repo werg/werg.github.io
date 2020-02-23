@@ -16,6 +16,9 @@ _Consumer demand drove UX as a discipline_.
 
 This process has been fast in some areas, slow in others. Nowhere has it been slower than in the realm of programming tools. We coders still put up with horrid UX/UI when programming.
 
+![Visual Studio](/images/visual_studio.png "User Experiance")
+
+
 # Why DX lags behind
 
 Iin my view the User Interface of programming encompasses a lot, from the type system of the programming language that you use, its error messages, to the editor you&#39;re writing code in, the websites you go to in order to get help, all the way to the cloud hosting systems you deploy on. Developer Interface / Developer Experience is comprised of all of this.
@@ -57,9 +60,10 @@ So, what&#39;s the alternative? Here are my suggestions for a world with better 
 3. _Search_ -- It&#39;s our dirty little secret how much programming nowadays depends on Google. I find this topic fascinating and I&#39;ll write much more on it -- coming up!
 4. _Standardize fundamental questions_ -- How do I run this thing? Where does the code start? Is my system configured correctly?
 5. _Intelligently hide details_ -- Coding is about control, however understanding is not. Most environments throw up their hands and overwhelm you with the entire pile of everything the program does, in minute detail. Others take a different tack and try to hide the bitter realities behind magic -- impenetrable and beautiful until you inevitably _do_ have to care about what's behind the curtain. Why do we have so few systems that would allow us to zoom in and out? _Get you a coding environment that can do both_.
-6. _Programming Languages are User Interfaces_ -- The most fundamental unit of Developer Experience is the programming language. The Elm language is one of few examples where this reality was considered explicitly in the design process.
-7. _Programming is about empowering_ -- dumbing things down is _not_ enough. I believe minimalism is a cheap approach to UX in general, but it definitely doesn&#39;t work for DX -- it fundamentally misses the point of what programming is about: expressive power. I believe this is why many &quot;graphical&quot;/beginner programming languages have failed.
-8. _Engage with Theoretical Computer Science_ -- In a way we are hunting for UI widgets (or other kinds of artifacts) that can faithfully represent the full computational complexity of algorithms. This is the one area where [Bret Victor&#39;s](http://worrydream.com/) excellent work may have fallen short of what we ultimately need.
+6. _Coding is a social process_ -- The success of GitHub is a testament to this. I'm not sure, but maybe we can do more along those lines.
+7. _Programming Languages are User Interfaces_ -- The most fundamental unit of Developer Experience is the programming language. The Elm language is one of few examples where this reality was considered explicitly in the design process.
+8. _Programming is about empowering_ -- dumbing things down is _not_ enough. I believe minimalism is a cheap approach to UX in general, but it definitely doesn&#39;t work for DX -- it fundamentally misses the point of what programming is about: expressive power. I believe this is why many &quot;graphical&quot;/beginner programming languages have failed.
+9. _Engage with Theoretical Computer Science_ -- In a way we are hunting for UI widgets (or other kinds of artifacts) that can faithfully represent the full computational complexity of algorithms. This is the one area where [Bret Victor&#39;s](http://worrydream.com/) excellent work may have fallen short of what we ultimately need.
 
 
 ![UX Meme](/images/why-ux-research-is-important.png "Just ship it!")
