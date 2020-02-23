@@ -11,8 +11,6 @@
 
 Many (maybe most) of us Software Engineers are deeply involved in projects where UI and UX are very important concerns (or at least they should be). Throughout the short history of our profession, we have become more and more focused on understanding and serving the people who will actually be subjected to the stuff we build:  **users**. In many cases, this focus on UI/UX isn&#39;t because we particularly enjoy worrying about such matters -- no, it&#39;s simply because we have to if we want to build successful products!
 
-![UX Meme](/images/why-ux-research-is-important.png "Just ship it!")
-
 There has been tremendous growth in the field of UX/UI. Without a doubt, today&#39;s applications are much more user-friendly than those from 30 years ago. Back then, users were given  **features**, interface be damned. It was only over time that customers came to appreciate, expect, demand and reward those applications that actually cared to consider their needs.
 _Consumer demand drove UX as a discipline_.
 
@@ -30,7 +28,7 @@ When was the last time you heard of a programming language discussed in terms of
 
 I believe there are two reasons for the discrepancy between general UX and DX:
 
-[ENIAC Computers](/images/eniac1.jpg "The good old days")
+![ENIAC Computers](/images/eniac1.jpg "The good old days")
 
 1. . **Coding tools were around before UI/UX was a thing**.
 We&#39;ve simply gotten used to them: Dealing with the idiosyncracies of bash, vi, or the JavaScript type system have become a part of the professional hazing process.
@@ -64,6 +62,9 @@ So, what&#39;s the alternative? Here are my suggestions for a world with better 
 6. _Programming Languages are User Interfaces_ -- The most fundamental unit of Developer Experience is the programming language. The Elm language is one of few examples where this reality was considered explicitly in the design process.
 7. _Programming is about empowering_ -- dumbing things down is _not_ enough. I believe minimalism is a cheap approach to UX in general, but it definitely doesn&#39;t work for DX -- it fundamentally misses the point of what programming is about: expressive power. I believe this is why many &quot;graphical&quot;/beginner programming languages have failed.
 8. _Engage with Theoretical Computer Science_ -- In a way we are hunting for UI widgets (or other kinds of artifacts) that can faithfully represent the full computational complexity of algorithms. This is the one area where [Bret Victor&#39;s](http://worrydream.com/) excellent work may have fallen short of what we ultimately need.
+
+
+![UX Meme](/images/why-ux-research-is-important.png "Just ship it!")
 
 # DX is worth it
 
