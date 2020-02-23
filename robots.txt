@@ -1,4 +1,4 @@
-Sitemap: http:///werg.github.io/sitemapindex.xml
+Sitemap: https://www.gabrielpickard.com/sitemapindex.xml
 
 User-Agent: *
-Host: 
+Host: www.gabrielpickard.com

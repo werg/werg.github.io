@@ -6,15 +6,15 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http:///werg.github.io/galleries/rss.xml</loc>
+  <loc>https://www.gabrielpickard.com/galleries/rss.xml</loc>
   <lastmod>2020-02-23T05:51:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http:///werg.github.io/rss.xml</loc>
-  <lastmod>2020-02-23T05:56:00Z</lastmod>
+  <loc>https://www.gabrielpickard.com/rss.xml</loc>
+  <lastmod>2020-02-23T07:11:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http:///werg.github.io/sitemap.xml</loc>
-  <lastmod>2020-02-23T05:56:00Z</lastmod>
+  <loc>https://www.gabrielpickard.com/sitemap.xml</loc>
+  <lastmod>2020-02-23T07:11:00Z</lastmod>
  </sitemap>
 </sitemapindex>
