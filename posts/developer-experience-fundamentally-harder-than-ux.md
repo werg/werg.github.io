@@ -18,7 +18,6 @@ This process has been fast in some areas, slow in others. Nowhere has it been sl
 
 ![Visual Studio](/images/visual_studio.png "User Experiance")
 
-
 # Why DX lags behind
 
 Iin my view the User Interface of programming encompasses a lot, from the type system of the programming language that you use, its error messages, to the editor you&#39;re writing code in, the websites you go to in order to get help, all the way to the cloud hosting systems you deploy on. Developer Interface / Developer Experience is comprised of all of this.
