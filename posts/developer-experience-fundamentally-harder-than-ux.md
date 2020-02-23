@@ -11,7 +11,7 @@
 
 Many (maybe most) of us Software Engineers are deeply involved in projects where UI and UX are very important concerns (or at least they should be). Throughout the short history of our profession, we have become more and more focused on understanding and serving the people who will actually be subjected to the stuff we build:  **users**. In many cases, this focus on UI/UX isn&#39;t because we particularly enjoy worrying about such matters -- no, it&#39;s simply because we have to if we want to build successful products!
 
-![UX Meme](/images/wy-ux-research-is-important.png "Just ship it!")
+![UX Meme](/images/why-ux-research-is-important.png "Just ship it!")
 
 There has been tremendous growth in the field of UX/UI. Without a doubt, today&#39;s applications are much more user-friendly than those from 30 years ago. Back then, users were given  **features**, interface be damned. It was only over time that customers came to appreciate, expect, demand and reward those applications that actually cared to consider their needs.
 _Consumer demand drove UX as a discipline_.
@@ -30,6 +30,8 @@ When was the last time you heard of a programming language discussed in terms of
 
 I believe there are two reasons for the discrepancy between general UX and DX:
 
+[ENIAC Computers](/images/eniac1.jpg "The good old days")
+
 1. . **Coding tools were around before UI/UX was a thing**.
 We&#39;ve simply gotten used to them: Dealing with the idiosyncracies of bash, vi, or the JavaScript type system have become a part of the professional hazing process.
 They may be suboptimal, _but they're ours!_
@@ -37,7 +39,6 @@ This is compounded by the fact that the history of technology is so path depende
 Certainly every mature technology will have to deal with technical debt in the inner workings of its guts. I have no bones with that. However, if the gory details are in the guts, then we coders are the GI surgeons having to deal with them. -- And we need sharper scalpels, better imaging and protective gear. In short: better tools.
 
 ![Chomsky Hierarchy](/images/chomsky_hierarchy.png "Theoretical CS was fun")
-
 
 2. **Fundamentally, programming is a Turing Complete business.**
 Compare most GUIs -- in terms of language complexity, the different states that the application interface can find itself in, would in the majority of cases correspond to regular languages (some may be context-free, but that&#39;s pushing it). The visual languages are &quot;flat&quot;, predictable, without feedback loops or long distance dependencies. It is in such an environment that UI/UX principles have been able to thrive.
@@ -50,7 +51,7 @@ So, what I believe has happened is that in many cases we programmers have tilted
 
 deal with them. -- And we need sharper scalpels, better imaging and protective gear. In short: better tools.
 
-![Ironman interface](/images/futuristic_interface.jpg "This could be us but you coding")
+![Ironman interface](/images/futuristic_interface.jpeg "This could be us but you coding")
 
 
 So, what&#39;s the alternative? Here are my suggestions for a world with better Developer Experience:
