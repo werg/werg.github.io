@@ -98,13 +98,15 @@ Fundamental principles in conventional UI/UX design no longer apply when it come
 <p>So, what's the alternative? Here are my suggestions for a world with better Developer Experience:</p>
 <ol>
 <li>
-<em>Watch what coders actually do</em> -- this is one principle from UX that applies readily. Library developers rarely know what error messages users most commonly get stuck on; How about user studies? We track every click that people make on our website and agonize over button sizes, but know precious little about how common which call paths in our framework are.</li>
+<em>Watch what coders actually do</em> -- this is one principle from UX that applies readily. Library developers rarely know what error messages users most commonly get stuck on; How about user studies? We track every click that people make on our website and agonize over button sizes, but know precious little about how common which call paths in our framework are. The elephant in the room here of course is privacy.</li>
 <li>
-<em>Address the many components that make up programming in concert</em>: Editor, shell, repl, language, version control host, cloud host and framework. Generally these pieces are not very aware of each other.</li>
+<em>Address the many components that make up programming in concert</em>: Editor, shell, repl, language, version control host, cloud host and framework. Generally these pieces are not very aware of each other. There is some movement on this front: Microsoft is gearing up to tightly integrate VSCode, GitHub and Azure. This portends market domination. Competitors take note!</li>
 <li>
-<em>Search</em> -- It's our dirty little secret how much programming nowadays depends on Google. I find this topic fascinating and I'll write much more on it -- coming up!</li>
+<em>Search</em> -- It's our dirty little secret how much programming nowadays depends on Google. Arguable it is the most important item in our toolbelt. However, search engines nowadays do a uniquely poor job supporting developers. Most of recent Natural Language Understanding developments have made search less precise and less useful for coders, while hardly any new features have been added with our needs in mind. I find this topic fascinating and I'll be writing more about it-- coming up!</li>
 <li>
-<em>Standardize fundamental questions</em> -- How do I run this thing? Where does the code start? Is my system configured correctly?</li>
+<em>Standardize fundamental questions</em> -- How do I run this thing? Where does the code start? Is my system configured correctly? Project Readmes are hardly ever up to date. Why do we treat this as a moral failing instead of a usability issue?</li>
+<li>
+<em>Tests are a usability dead end</em>  -- I know this may be contentious, but I believe test suites are another realm of excessive moralizing en lieu of better tools and better processes. Too often they function as a security blanket that simply encases the parts of the code that are <em>unit testable</em>, while leaving the vulnerable, untestable bits fluttering in the wind. Approaches such as generative testing seem more promising.</li>
 <li>
 <em>Intelligently hide details</em> -- Writing code is about control, however understanding code is not. Most environments throw up their hands and overwhelm you with the entire pile of everything the program does, in minute detail. Others take a different tack and try to hide the bitter realities behind magic -- impenetrable and beautiful until you inevitably <em>do</em> have to care about what's behind the curtain. Why do we have so few systems that would allow us to zoom in and out? <em>Get you a coding environment that can do both</em>.</li>
 <li>
