@@ -11,6 +11,8 @@
 
 Many (maybe most) of us Software Engineers are deeply involved in projects where UI and UX are very important concerns (or at least they should be). Throughout the short history of our profession, we have become more and more focused on understanding and serving the people who will actually be subjected to the stuff we build:  **users**. In many cases, this focus on UI/UX isn&#39;t because we particularly enjoy worrying about such matters -- no, it&#39;s simply because we have to if we want to build successful products!
 
+![UX Meme](/images/wy-ux-research-is-important.png "Just ship it!")
+
 There has been tremendous growth in the field of UX/UI. Without a doubt, today&#39;s applications are much more user-friendly than those from 30 years ago. Back then, users were given  **features**, interface be damned. It was only over time that customers came to appreciate, expect, demand and reward those applications that actually cared to consider their needs.
 _Consumer demand drove UX as a discipline_.
 
@@ -28,15 +30,13 @@ When was the last time you heard of a programming language discussed in terms of
 
 I believe there are two reasons for the discrepancy between general UX and DX:
 
-![ENIAC Computers](/images/eniac1.jpg "The good old days")
-
 1. . **Coding tools were around before UI/UX was a thing**.
 We&#39;ve simply gotten used to them: Dealing with the idiosyncracies of bash, vi, or the JavaScript type system have become a part of the professional hazing process.
 They may be suboptimal, _but they're ours!_
 This is compounded by the fact that the history of technology is so path dependent. In so many cases it is much easier and more profitable to build on something existing rather than reinvent the wheel. -- Even if the existing wheel is full of arbitrary decisions and in fact impediments to what you are trying to do. Just look at the long reign of the x86 architecture, or consider the fact that basically all Operating Systems these days follow the Unix architecture. The fact that JavaScript is what it is. -- I don&#39;t mean to say that these technologies are without merit, however they also have considerable flaws and it has been more efficient to work with and around than to replace them entirely.
 Certainly every mature technology will have to deal with technical debt in the inner workings of its guts. I have no bones with that. However, if the gory details are in the guts, then we coders are the GI surgeons having to deal with them. -- And we need sharper scalpels, better imaging and protective gear. In short: better tools.
 
-![Chomsky Hierarchy](/images/chomsky_hierarchy.jpg "Theoretical CS was fun")
+![Chomsky Hierarchy](/images/chomsky_hierarchy.png "Theoretical CS was fun")
 
 
 2. **Fundamentally, programming is a Turing Complete business.**

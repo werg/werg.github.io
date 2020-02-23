@@ -20,10 +20,10 @@ BLOG_AUTHOR = "Gabriel Pickard"  # (translatable)
 BLOG_TITLE = "Gabriel Pickard"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "http://www.gabrielpickard.com/"
+SITE_URL = "https://www.gabrielpickard.com/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-BASE_URL = "http:/werg.github.io/"
+#BASE_URL = "https://www.gabrielpickard.com/"
 BLOG_EMAIL = "info@gabrielpickard.com"
 BLOG_DESCRIPTION = "Serving you via log, lead & lookout"  # (translatable)
 
