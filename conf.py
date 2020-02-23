@@ -23,12 +23,15 @@ BLOG_TITLE = "Gabriel Pickard"  # (translatable)
 SITE_URL = "http://www.gabrielpickard.com/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://gabrielpickard.com/"
+BASE_URL = "http:/werg.github.io/"
 BLOG_EMAIL = "info@gabrielpickard.com"
 BLOG_DESCRIPTION = "Serving you via log, lead & lookout"  # (translatable)
 
 
 GITHUB_DEPLOY_BRANCH = "master"
+GITHUB_REMOTE_NAME = "git@github.com:werg/werg.github.io.git"
+GITHUB_COMMIT_SOURCE = True
+
 
 # Nikola is multilingual!
 #
