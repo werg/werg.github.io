@@ -6,39 +6,35 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>http://gabrielpickard.com/</loc>
-  <lastmod>2020-02-22T20:01:00Z</lastmod>
+  <loc>http://www.gabrielpickard.com/</loc>
+  <lastmod>2020-02-23T05:43:00Z</lastmod>
  </url>
  <url>
-  <loc>http://gabrielpickard.com/2020/</loc>
+  <loc>http://www.gabrielpickard.com/2020/</loc>
   <lastmod>2020-02-22T19:46:00Z</lastmod>
  </url>
  <url>
-  <loc>http://gabrielpickard.com/archive.html</loc>
-  <lastmod>2020-02-23T05:34:00Z</lastmod>
+  <loc>http://www.gabrielpickard.com/archive.html</loc>
+  <lastmod>2020-02-23T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>http://gabrielpickard.com/categories/</loc>
+  <loc>http://www.gabrielpickard.com/categories/</loc>
   <lastmod>2020-02-22T19:07:00Z</lastmod>
  </url>
  <url>
-  <loc>http://gabrielpickard.com/galleries/</loc>
+  <loc>http://www.gabrielpickard.com/galleries/</loc>
   <lastmod>2020-02-22T19:07:00Z</lastmod>
  </url>
  <url>
-  <loc>http://gabrielpickard.com/listings/</loc>
+  <loc>http://www.gabrielpickard.com/listings/</loc>
   <lastmod>2020-02-22T19:07:00Z</lastmod>
  </url>
  <url>
-  <loc>http://gabrielpickard.com/posts/developer-experience-fundamentally-harder-than-ux/</loc>
-  <lastmod>2020-02-23T05:34:00Z</lastmod>
+  <loc>http://www.gabrielpickard.com/posts/developer-experience-fundamentally-harder-than-ux/</loc>
+  <lastmod>2020-02-23T05:43:00Z</lastmod>
  </url>
  <url>
-  <loc>http://gabrielpickard.com/posts/fundamentally-harder-than-ux/</loc>
-  <lastmod>2020-02-22T19:47:00Z</lastmod>
- </url>
- <url>
-  <loc>http://gabrielpickard.com/posts/i-declare-blog/</loc>
+  <loc>http://www.gabrielpickard.com/posts/i-declare-blog/</loc>
   <lastmod>2020-02-22T19:51:00Z</lastmod>
  </url>
 </urlset>
