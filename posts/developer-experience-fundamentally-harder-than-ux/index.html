@@ -14,12 +14,14 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://gabrielpickard.com/posts/developer-experience-fundamentally-harder-than-ux/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Gabriel Pickard">
+<link rel="prev" href="../i-declare-blog/" title="I declare blog" type="text/html">
 <meta property="og:site_name" content="Gabriel Pickard">
 <meta property="og:title" content="Developer Experience: Fundamentally harder than UX">
 <meta property="og:url" content="http://gabrielpickard.com/posts/developer-experience-fundamentally-harder-than-ux/">
-<meta property="og:description" content="Write your post here.">
+<meta property="og:description" content="Developer Experience is fundamentally harder than User Experience
+Many (maybe most) of us Software Engineers are deeply involved in projects where UI and UX are very important concerns (or at least th">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2020-02-22T13:46:00-06:00">
+<meta property="article:published_time" content="2020-02-22T23:34:01-06:00">
 </head>
 <body class="hack dark">
 
@@ -51,18 +53,71 @@
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
-            <time class="published dt-published" datetime="2020-02-22T13:46:00-06:00" itemprop="datePublished" title="2020-02-22 13:46">2020-02-22 13:46</time></a>
+            <time class="published dt-published" datetime="2020-02-22T23:34:01-06:00" itemprop="datePublished" title="2020-02-22 23:34">2020-02-22 23:34</time></a>
             </p>
             
-        <p class="sourceline"><a href="index.rst" class="sourcelink">Source</a></p>
+        <p class="sourceline"><a href="index.md" class="sourcelink">Source</a></p>
 
         </div>
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Write your post here.</p>
+    <div>
+<h2>Developer Experience is fundamentally harder than User Experience</h2>
+<p>Many (maybe most) of us Software Engineers are deeply involved in projects where UI and UX are very important concerns (or at least they should be). Throughout the short history of our profession, we have become more and more focused on understanding and serving the people who will actually be subjected to the stuff we build:  <strong>users</strong>. In many cases, this focus on UI/UX isn't because we particularly enjoy worrying about such matters -- no, it's simply because we have to if we want to build successful products!</p>
+<p>There has been tremendous growth in the field of UX/UI. Without a doubt, today's applications are much more user-friendly than those from 30 years ago. Back then, users were given  <strong>features</strong> , interface be damned. It was only over time that customers came to appreciate, expect, demand and reward those applications that actually cared to consider their needs.
+<em>Consumer demand drove UX as a discipline</em>.</p>
+<p>This process has been fast in some areas, slow in others. Nowhere has it been slower than in the realm of programming tools. We coders still put up with horrid UX/UI when programming.</p>
+<h2>Why DX lags behind</h2>
+<p>Iin my view the User Interface of programming encompasses a lot, from the type system of the programming language that you use, its error messages, to the editor you're writing code in, the websites you go to in order to get help, all the way to the cloud hosting systems you deploy on. Developer Interface / Developer Experience is comprised of all of this.</p>
+<ul>
+<li>Counter to any UI/UX philosophy, as programmers we find ourselves maintaining vast background knowledge about the structure and dynamics of our programs, with nary a visual cue to help us.</li>
+<li>It's often so hard to figure out what <em>exactly</em> went wrong when something goes wrong.</li>
+<li>A lot of tools are truly ugly!</li>
+</ul>
+<p>When was the last time you heard of a programming language discussed in terms of discoverability, succinctness, relevance, let alone beauty?</p>
+<p>I believe there are two reasons for the discrepancy between general UX and DX:</p>
+<ol>
+<li>
+<p>. <strong>Coding tools were around before UI/UX was a thing</strong>.
+We've simply gotten used to them and dealing with the idiosyncracies of bash, vi, or the JavaScript type system have simply become part of the professional hazing process
+We kind of got stuck with some solutions that are sub-optimal, but we just got used to them.
+This is compounded by the fact that the history of technology is so path dependent. In so many cases it is much easier and more profitable to build on something existing than to reinvent the wheel, even if the existing wheel is full of arbitrary decisions and in fact impediments to what you are trying to do. Just look at the long reign of the x86 architecture, or consider the fact that basically all Operating Systems these days follow the Unix architecture. The fact that JavaScript is what it is. -- I don't mean to say that these technologies are without merit, however they also have considerable flaws and it has been more efficient to work with and around than to replace them entirely.</p>
+</li>
+<li>
+<p><strong>Fundamentally, programming is a Turing Complete business.</strong>
+Compare most GUIs -- in terms of language complexity, the different states that the application interface can find itself in, would in the majority of cases correspond to regular languages (some may be context-free, but that's pushing it). The visual languages are "flat", predictable, without feedback loops or long distance dependencies. It is in such an environment that UI/UX principles have been able to thrive.
+But what did our <em>Intro to Theoretical CS</em> course teach us in college? You can't assume that statements about regular languages will still hold for Linearly Bounded Automata, let alone Turing Machines.
+Fundamental principles in conventional UI/UX design no longer apply when it comes to programming. DI/DX is a very, very special case UI/UX.</p>
+</li>
+</ol>
+<p>So, what I believe has happened is that in many cases we programmers have tilted at windmills of trying to improve our tooling -- the eternal yak shave -- only to be thwarted by the complexity of our own work, inevitably giving up and going with the most rudimentary system capable of doing the job somehow, even if it sucks.</p>
+<h2>Toward better DX</h2>
+<p>So, what's the alternative? Here are my suggestions for a world with better Developer Experience:</p>
+<ol>
+<li>
+<em>Watch what coders actually do</em> -- this is one principle from UX that applies readily. Library developers rarely know what error messages users most commonly get stuck on; How about user studies? We track every click that people make on our website and agonize over button sizes, but know precious little about how common which call paths in our framework are.</li>
+<li>
+<em>Address the many components that make up programming in concert</em>: Editor, shell, repl, language, version control host, cloud host and framework. Generally these pieces are not very aware of each other.</li>
+<li>
+<em>Search</em> -- It's our dirty little secret how much programming nowadays depends on Google. I find this topic fascinating and I'll write much more on it -- coming up!</li>
+<li>
+<em>Programming Languages are User Interfaces</em> -- The most fundamental unit of Developer Experience is the programming language. The Elm language is one of few examples where this reality was considered explicitly in the design process.</li>
+<li>
+<em>Programming is about empowering</em> -- dumbing things down is <em>not</em> enough. I believe minimalism is a cheap approach to UX in general, but it definitely doesn't work for DX -- it fundamentally misses the point of what programming is about: expressive power. I believe this is why many "graphical"/beginner programming languages have failed.</li>
+<li>
+<em>Engage with Theoretical Computer Science</em> -- In a way we are hunting for UI widgets (or other kinds of artifacts) that can faithfully represent the full computational complexity of algorithms. This is the one area where <a href="http://worrydream.com/">Bret Victor's</a> excellent work may have fallen short of what we ultimately need.</li>
+</ol>
+<h2>DX is worth it</h2>
+<p>Interest in this topic is growing. It's definitely worth looking into. The software industry is so big and expensive that even small improvements can have considerable impact. Furthermore, Software Engineers actually <em>do</em>  respond to better UX -- and they wield considerable purchasing power. Consider the following example:</p>
+<p>I once worked at a small-to-midsize company which for regulatory reasons couldn't use the normal cloud-hosted GitHub. Our engineering department strong-armed the rest of the company to purchase on-premise GitHub Enterprise at a cost equivalent to hiring one or two additional engineers, <em>just so we could use Pull-Requests!</em> We recognized the difference it made in our productivity and we demanded it -- only the best of tools would do.</p>
+</div>
     </div>
-    <aside class="postpromonav"><nav></nav></aside></article></main><footer id="footer"><p>Contents © 2020         <a href="mailto:info@gabrielpickard.com">Gabriel Pickard</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../i-declare-blog/" rel="prev" title="I declare blog">Previous post</a>
+            </li>
+        </ul></nav></aside></article></main><footer id="footer"><p>Contents © 2020         <a href="mailto:info@gabrielpickard.com">Gabriel Pickard</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>
