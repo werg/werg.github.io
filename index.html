@@ -14,7 +14,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://www.gabrielpickard.com/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/developer-experience-fundamentally-harder-than-normal-ux/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/data-science-is-dying-out/" type="text/html">
 </head>
 <body class="hack dark">
 
@@ -39,7 +39,42 @@
     
     
     </ul></nav></header><main id="content"><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/developer-experience-fundamentally-harder-than-normal-ux/" class="u-url">Developer Experience: Fundamentally harder than normal UX</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/data-science-is-dying-out/" class="u-url">Data Science is dying out</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Gabriel Pickard
+            </span></p>
+            <p class="dateline">
+            <a href="posts/data-science-is-dying-out/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-02-24T01:50:26-06:00" itemprop="datePublished" title="2020-02-24 01:50">2020-02-24 01:50</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>As a Data Scientist you usually do one of two things:
+1. You comb through a pile of numbers derived from a SQL database, S3 or an HDFS cluster, in order to answer questions like "what keeps customers from converting?" and make predictions like "How much is a given user worth?".
+2. You build Machine Learning models that do actual ongoing work in deployed applications.</p>
+<p>For both of these task groups there exists a different job title with similar job description:</p>
+<ol>
+<li>If you replace the SQL with Excel spreadsheets, then Analysts have been and still are answering the same kind of questions.</li>
+<li>Software Engineers have been doing Machine Learning for a long time. Long enough that there now is such a thing as a Machine Learning Engineer.</li>
+</ol>
+<p>Data Scientists distinguish themselves from Analysts by knowing a bit more about programming. They distinguish themselves from Software Engineers by knowing less about programming. They differ from both in that Data Scientists usually are expected to have gone to grad school and know a thing or two more about math. </p>
+<p>The "Data Scientist" job title was a way for industry to hire academics to do the kind of computational modeling that PhD candidates usually do in academia.
+Also, it was a way for managers to feel cool, hip and with it.</p>
+<p><strong>But it's dying.</strong></p>
+<p>Why you say? Well, hear me out:</p>
+<ol>
+<li>Analysts can and do learn how to write SQL queries. Often (not always) the math involved in answering business questions can actually be kept relatively simple, you often don't need a PhD to do it. Doesn't hurt though, I guess.</li>
+<li>Machine learning is getting commodified. You no longer need a PhD and write your own backpropagation algorithm in order to do Deep Learning. (It's sad, I know.) All you need is GPUs and money to burn. -- Well, and feature engineering, you do need feature engineering from time to time. And some experience in the field and domain knowledge. But all those can be acquired by any bright individual.
+Also, if your models are to do real work, they usually need to be integrated into real code. Here it comes in handy to know a thing or two about Software Engineering. Hence the rise in popularity of the ML Engineer.</li>
+</ol>
+<p>Now I know for a fact that once you give a group of people in the professional class a title and a decent salary, they'll make sure their field will continue to be needed, come hell or high water. So, in fact: I lied.</p>
+<p>Data Science is going nowhere, it's just that if you happen to not have Data Scientists on hand at your organization, don't fret, you still can get stuff done.</p>
+<p>But if you decide you do desperately need someone to make sweet, sweet Science to your Data, you might be in luck: I'm a Sciencer of Data myself, possibly accepting clients. -- Or maybe I'm an ML Engineer, or something like that... Just give me a ring.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/developer-experience-fundamentally-harder-than-normal-ux/" class="u-url">Developer Experience: Fundamentally harder than normal UX</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Gabriel Pickard
@@ -77,7 +112,7 @@ Certainly every mature technology will have to deal with technical debt in the i
 </li>
 <li>
 <strong>Fundamentally, programming is a Turing Complete business.</strong>
-Compare most GUIs -- in terms of language complexity, the different states that the application interface can find itself in, would in the majority of cases correspond to regular languages (some may be context-free, but that's pushing it). The visual languages are "flat", predictable, without feedback loops or long distance dependencies. It is in such an environment that UI/UX principles have been able to thrive.
+You can view a UI as a form of (visual) formal language. For most GUIs the language complexity, the different states that the application interface can find itself in, would largely correspond to regular languages (some may be context-free, but that's pushing it). The visual languages are "flat", predictable, without feedback loops or long distance dependencies. It is in such an environment that UI/UX principles have been able to thrive.
 But what did our <em>Intro to Theoretical CS</em> course teach us in college? You can't assume that statements about regular languages will still hold for Linearly Bounded Automata, let alone Turing Machines.
 Fundamental principles in conventional UI/UX design no longer apply when it comes to programming. DI/DX is a very, very special case UI/UX.</li>
 </ol>
