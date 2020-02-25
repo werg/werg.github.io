@@ -150,7 +150,7 @@ NAVIGATION_LINKS = {
         ("https://github.com/werg", "Github"),
         #("/categories/", "Tags"),
         ("/archive.html", "Archive"),
-        ("/rss.xml", "RSS feed"),
+        ("/rss.xml", "RSS"),
     ),
 }
 
