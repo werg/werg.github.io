@@ -31,8 +31,10 @@ Why you say? Well, I'm glad you asked:
 2. Machine learning is getting commodified. You no longer need to write your own backpropagation algorithm in order to do Deep Learning. (It's sad, I know.) All you need is GPUs and money to burn. -- Well, and feature engineering, you do need feature engineering from time to time. And some experience in the field and domain knowledge. But all those can be acquired by many a bright individual.
 Also, if your models are to do real work, they usually need to be integrated into real code. Here it comes in handy to know a thing or two about Software Engineering. Hence the rise in popularity of the ML Engineer.
 
-Now I know for a fact that once you give a group of people in the professional class a title and a decent salary, they'll make sure their field will continue to be needed, come hell or high water. So, in fact: I lied.
+Now I know for a fact that once you give a group of people in the professional class a title and a decent salary, they'll make sure their field will continue to be needed, come hell or high water. So, in fact: *I lied.*
 
-Data Science is going nowhere, it's just that if you happen to not have Data Scientists on hand at your organization, don't fret, you still can get stuff done.
+**Sorry.**
+
+Data Science is going nowhere, it's just that if you happen to not have Data Scientists on hand at your organization, _don't fret, you still can get stuff done._
 
 But if you decide you do desperately need someone to make sweet, sweet Science to your Data; I'm a Sciencer of Data myself, possibly accepting clients. -- Or maybe I'm an ML Engineer, or something like that... Just give me a ring.
