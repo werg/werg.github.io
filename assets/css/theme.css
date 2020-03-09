@@ -28,17 +28,10 @@
 
 body {
 	color: #4F5151;
-	font-family: 'Share Tech Mono', monospace;
-	font-size: 20px;
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	font-size: 17px;
 	line-height: 1.4;
 	padding: 1em;
-}
-
-
-
-.code, .hack, .hack blockquote, .hack code, .hack em, .hack h1, .hack h2, .hack h3, .hack h4, .hack h5, .hack h6, .hack strong
-{
-	font-family: 'Share Tech Mono', monospace;
 }
 
 #container {
@@ -213,11 +206,9 @@ body {
 :link {
 	color: #1168CC;
 	text-decoration: none;
-    border-bottom: 0px none green
 }
 :visited {
 	color: #6830BB;
-    border-bottom: 0px none green
 }
 :link:hover, :visited:hover {
 	color: #0d53a3;
@@ -416,4 +407,3 @@ pre.code, code {
 		padding: 0;
 	}
 }
-
