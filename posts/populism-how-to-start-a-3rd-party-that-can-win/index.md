@@ -110,6 +110,8 @@ From this perspective, I have been doing my best to consider what the most salie
 
 I am particularly curious about one thing: Do you agree that Trump, while having his moments and sticking it to _some_ elites, is largely incompetent and ineffective? Do you see yourself represented by the Republican party? What are your main gripes? This is really about making a case that is appealing to both sides of the coin.
 
-Whether you're a habitual Republican or Democrat voter, one thing is clear: Supporting a joint populist party is the strongest way for you to advance your interests and the well-being of your loved ones. Either it puts pressure on the establishment to take your needs into account, or populism wins -- or both! 
+Whether you're a habitual Republican or Democrat voter, one thing is clear: Supporting a joint populist party is the strongest way for you to advance your interests and the well-being of your loved ones. Either it puts pressure on the establishment to take your needs into account, or populism wins -- or both!
+
+ **YOU CANNOT LOSE**
 
 ![Trumpian Trump](/images/trumpiantrump.gif)
