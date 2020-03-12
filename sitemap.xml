@@ -7,34 +7,62 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://www.gabrielpickard.com/</loc>
-  <lastmod>2020-03-09T06:44:00Z</lastmod>
+  <lastmod>2020-03-12T05:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/2020/</loc>
-  <lastmod>2020-03-09T06:44:00Z</lastmod>
+  <lastmod>2020-03-12T05:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/archive.html</loc>
-  <lastmod>2020-03-09T06:44:00Z</lastmod>
+  <lastmod>2020-03-12T05:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/categories/</loc>
-  <lastmod>2020-03-09T06:44:00Z</lastmod>
+  <lastmod>2020-03-12T05:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/pages/about/</loc>
-  <lastmod>2020-03-09T06:44:00Z</lastmod>
+  <lastmod>2020-03-12T05:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/posts/data-science-is-dying-out/</loc>
-  <lastmod>2020-03-09T06:44:00Z</lastmod>
+  <lastmod>2020-03-12T05:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/posts/developer-experience-fundamentally-harder-than-normal-ux/</loc>
-  <lastmod>2020-03-09T06:44:00Z</lastmod>
+  <lastmod>2020-03-12T05:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.gabrielpickard.com/posts/how-effectively-start-a-3rd-party-in-the-united-states/</loc>
+  <lastmod>2020-03-11T22:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.gabrielpickard.com/posts/how-to-effectively-start-a-3rd-party-in-the-united-states/</loc>
+  <lastmod>2020-03-11T22:54:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.gabrielpickard.com/posts/how-to-start-a-3rd-party-that-can-win-in-the-united-states/</loc>
+  <lastmod>2020-03-12T00:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/posts/i-declare-blog/</loc>
-  <lastmod>2020-03-09T06:44:00Z</lastmod>
+  <lastmod>2020-03-12T05:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.gabrielpickard.com/posts/i-tracked-my-browsing-habits-while-coding-heres-what-i-found/</loc>
+  <lastmod>2020-03-12T04:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.gabrielpickard.com/posts/i-tracked-my-web-searches-while-coding-heres-what-i-found/</loc>
+  <lastmod>2020-03-09T17:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.gabrielpickard.com/posts/im-not-a-tinkerer-the-painful-hardly-instructive-story-of-how-i-became-a-decent-engineer/</loc>
+  <lastmod>2020-03-12T01:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.gabrielpickard.com/posts/populism-how-to-start-a-3rd-party-that-can-win/</loc>
+  <lastmod>2020-03-12T05:34:00Z</lastmod>
  </url>
 </urlset>
