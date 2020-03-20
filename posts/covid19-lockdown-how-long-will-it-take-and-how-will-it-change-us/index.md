@@ -12,7 +12,7 @@
 
 So you're entering lockdown mode and now you have two questions: How long will this last? And how bad will this be for the economy? Here I will give my answer to the first question: _how long it will take_. [The second part of this series](/posts/how-bad-will-it-be-economic-and-political-effects-of-covid19.md) deals with the political and economic ramifications of the pandemic.
 
-_After months of underestimating COVID19, the pendulum is finally swinging the other way. People are worried. We need to remain calm. Mitigating this disease will indeed be very costly, but we are not looking at a bottomless pit, both in terms of time and money. This will not be the end of civilization._
+_After months of underestimating COVID19, the pendulum is finally swinging the other way. People are very worried! But we need to remain calm. Mitigating this disease will indeed be very costly, but we are not looking at a bottomless pit, both in terms of time and money. This will not be the end of civilization._
 
 ![plague doctors](/images/plague_bigger.gif)
 
