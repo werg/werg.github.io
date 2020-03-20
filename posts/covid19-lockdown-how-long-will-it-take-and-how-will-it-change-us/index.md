@@ -37,7 +37,7 @@ Americans will have to adapt to constant controls. Will we need to track people'
 Americans need to finally start wearing masks. [This](https://www.businessinsider.com/wuhan-coronavirus-face-masks-not-entirely-effective-2020-1?op=1) [kind](https://time.com/5774521/coronavirus-face-mask-prevention/) of [disinformation](https://www.forbes.com/sites/tarahaelle/2020/02/29/no-you-do-not-need-face-masks-for-coronavirus-they-might-increase-your-infection-risk/#1440d4bb676c) to discourage mask usage is disingenuous and harmful. Currently the US has a shortage of masks, which indeed are very useful and are needed by medical professionals. Instead of admitting to poor planning and rationing masks, we are being misled. While it is true that masks do not perfectly protect you against getting infected, if everyone wears a mask, _those who are infected are much less likely to pass it on_ to others.
 
 
-The Chinese administration loosened their lockdown after about __two months__ -- I expect the US to take about as long, probably a bit longer. Our administration has the advantage of more information about the illness, but likely a less efficient apparatus. -- It may well happen that we open things up and then have to close them down again in some places, due to insufficient control measures.
+The Chinese administration loosened their lockdown after about __two months__ -- I expect the US to take about as long, possibly a bit longer. Our administration has the advantage of more information about the illness, but likely a less efficient apparatus. -- It may well happen that we open things up and then have to close them down again in some places, due to insufficient control measures.
 
 ## Health impacts
 
