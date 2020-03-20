@@ -12,3 +12,7 @@ header {
     margin-bottom: 2em;
     padding-bottom: 1em;
 }
+
+a {
+    text-decoration: underline;
+}

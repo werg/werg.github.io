@@ -7,38 +7,54 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://www.gabrielpickard.com/</loc>
-  <lastmod>2020-03-12T05:34:00Z</lastmod>
+  <lastmod>2020-03-20T18:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/2020/</loc>
-  <lastmod>2020-03-12T05:34:00Z</lastmod>
+  <lastmod>2020-03-20T18:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/archive.html</loc>
-  <lastmod>2020-03-12T05:34:00Z</lastmod>
+  <lastmod>2020-03-20T18:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/categories/</loc>
-  <lastmod>2020-03-12T05:34:00Z</lastmod>
+  <lastmod>2020-03-20T18:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/pages/about/</loc>
-  <lastmod>2020-03-12T05:34:00Z</lastmod>
+  <lastmod>2020-03-20T18:36:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.gabrielpickard.com/posts/covid19-lockdown-how-long-will-it-take-and-how-will-it-change-us/</loc>
+  <lastmod>2020-03-20T18:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/posts/data-science-is-dying-out/</loc>
-  <lastmod>2020-03-12T05:34:00Z</lastmod>
+  <lastmod>2020-03-20T18:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/posts/developer-experience-fundamentally-harder-than-normal-ux/</loc>
-  <lastmod>2020-03-12T05:34:00Z</lastmod>
+  <lastmod>2020-03-20T18:36:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.gabrielpickard.com/posts/how-bad-will-it-be-economic-and-political-effects-of-covid19/</loc>
+  <lastmod>2020-03-20T18:36:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.gabrielpickard.com/posts/how-covid19-will-affect-society-economy-and-politics/</loc>
+  <lastmod>2020-03-18T20:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://www.gabrielpickard.com/posts/how-covid19-will-affect-society-politics-and-the-economy/</loc>
+  <lastmod>2020-03-20T07:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/posts/i-declare-blog/</loc>
-  <lastmod>2020-03-12T05:34:00Z</lastmod>
+  <lastmod>2020-03-20T18:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/posts/populism-how-to-start-a-3rd-party-that-can-win/</loc>
-  <lastmod>2020-03-12T05:34:00Z</lastmod>
+  <lastmod>2020-03-20T18:36:00Z</lastmod>
  </url>
 </urlset>

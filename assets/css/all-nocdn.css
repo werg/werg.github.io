@@ -638,6 +638,10 @@ table.codetable { width: 100%;} td.linenos {text-align: right; width: 4em;}
 	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+header a {
+	text-decoration: none;
+}
+
 body {
 	color: #4F5151;
 	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
@@ -817,7 +821,7 @@ body {
 /* Links */
 :link {
 	color: #1168CC;
-	text-decoration: none;
+	/*text-decoration: none;*/
 }
 :visited {
 	color: #6830BB;
