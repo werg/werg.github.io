@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-So you're entering lockdown mode and now you have two questions: How long will this last? And how bad will this be for the economy? Here I provide my answer to the second question: _the economic and political effects of the pandemic_. In [the first part of this series](/posts/covid19-lockdown-how-long-will-it-take-and-how-will-it-change-us.md) I give an estimate of how long it will take and what it will be like for us to live through this grand experiment.
+So you're entering lockdown mode and now you have two questions: How long will this last? And how bad will this be for the economy? Here I provide my answer to the second question: _the economic and political effects of the pandemic_. In [the first part of this series](/posts/covid19-lockdown-how-long-will-it-take-and-how-will-it-change-us) I give an estimate of how long it will take and what it will be like for us to live through this grand experiment.
 
 _After months of underestimating COVID19, the pendulum is finally swinging the other way. People are worried! But we need to remain calm. Mitigating this disease will indeed be very costly, but we are not looking at a bottomless pit, both in terms of time and money. This will not be the end of civilization._
 
