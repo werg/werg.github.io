@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://www.gabrielpickard.com/</loc>
-  <lastmod>2020-03-20T18:36:00Z</lastmod>
+  <lastmod>2020-11-17T02:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://www.gabrielpickard.com/2020/</loc>
@@ -56,9 +56,5 @@
  <url>
   <loc>https://www.gabrielpickard.com/posts/populism-how-to-start-a-3rd-party-that-can-win/</loc>
   <lastmod>2020-03-20T18:36:00Z</lastmod>
- </url>
- <url>
-  <loc>https://www.gabrielpickard.com/posts/why-programming-languages-neednt-and-shouldnt-be-turing-complete/</loc>
-  <lastmod>2020-08-20T23:25:00Z</lastmod>
  </url>
 </urlset>
