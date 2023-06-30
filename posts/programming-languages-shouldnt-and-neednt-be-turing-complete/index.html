@@ -43,8 +43,7 @@
 
             
 <article class="post"><header class="post-header"><h3 class="p-post-title">Programming languages shouldn't and needn't be Turing complete</h3>
-    </header><section class="post-content"><div>
-<p>As we software engineers grow up, we are taught early on (like in kindergarten) to associate Turing (equivalent) machines with computation <em>per se</em>: It's the paradigm that the vast majority of programming languages aspire to and that many more which don't aspire to fall into <a href="https://beza1e1.tuxen.de/articles/accidentally_turing_complete.html">accidentally</a>. If you grew up like me, you probably came to believe that Turing completeness was necessary to build any serious programs and that Turing incomplete languages were either toys, parsing tools or config files. Well -- you maybe heard that <em>SQL</em> was Turing incomplete but not thought much of it.</p>
+    </header><section class="post-content"><p>As we software engineers grow up, we are taught early on (like in kindergarten) to associate Turing (equivalent) machines with computation <em>per se</em>: It's the paradigm that the vast majority of programming languages aspire to and that many more which don't aspire to fall into <a href="https://beza1e1.tuxen.de/articles/accidentally_turing_complete.html">accidentally</a>. If you grew up like me, you probably came to believe that Turing completeness was necessary to build any serious programs and that Turing incomplete languages were either toys, parsing tools or config files. Well -- you maybe heard that <em>SQL</em> was Turing incomplete but not thought much of it.</p>
 <p>Well, I have come to tell you that these matters aren't quite the way they seem: Turing incomplete languages can in fact be powerful enough to support pretty much any programming task you or I or any web developer, or data scientist, or devops engineer would be faced with today. I will also tell you that Turing incompleteness is very promising to drive a true leap forward in the art of software engineering, on par with the likes of garbage collection or structured programming.</p>
 <p>The goal is to leverage Turing incompleteness for:</p>
 <ul>
@@ -109,20 +108,23 @@
 <p>[reduce] is actually the one I've always hated most, because, apart from a few examples involving <em>+</em> or <em>*</em>, almost every time I see a <em>reduce()</em> call with a non-trivial function argument, I need to grab pen and paper to diagram what's actually being fed into that function before I understand what the <em>reduce()</em> is supposed to do</p>
 </blockquote>
 <p>He has a point, but consider the following code:</p>
-<pre class="code literal-block"><span class="nb">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">:</span> <span class="n">foo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">),</span> <span class="n">coll</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
-</pre>
+<div class="code"><pre class="code literal-block"><span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">:</span> <span class="n">foo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">),</span> <span class="n">coll</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+</pre></div>
+
 <p>This is equivalent to / syntactic sugar for:</p>
-<pre class="code literal-block"><span class="n">x</span> <span class="o">=</span> <span class="n">val</span>
+<div class="code"><pre class="code literal-block"><span class="n">x</span> <span class="o">=</span> <span class="n">val</span>
 <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">coll</span><span class="p">:</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">foo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</pre>
+</pre></div>
+
 <p>As such it of course makes sense to <em>not</em> use the explicit <em>reduce</em> function througout most Python code and instead use the pretty syntax. Any Turing incomplete language aiming for user friendliness would aim for similarly readable constructs, either via macros or built-ins. Here's an example <em>pythonic</em> nested reduce:</p>
-<pre class="code literal-block"><span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">nested_list</span><span class="p">):</span>
+<div class="code"><pre class="code literal-block"><span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">nested_list</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">item</span> <span class="n">nested</span> <span class="ow">in</span> <span class="n">nested_list</span> <span class="k">with</span> <span class="n">result</span> <span class="o">=</span> <span class="p">[]:</span>
         <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">result</span>
-</pre>
+</pre></div>
+
 <h3>Leveraging Turing incompleteness</h3>
 <p>Above I have outlined some <em>very simple</em> constructs without fancy type/termination checking, which already can handle the vast majority of retail programmer use cases. This is good news, because once we start down the happy road of tractable language semantics and gain more experience, it stands to reason that even more intricate, efficiency sensitive "capital A algorithms" will be supported.</p>
 <p>I have shown that it's not too hard to build a Turing incomplete language. What I haven't yet outlined is how to leverage Turing incompleteness. Partially, this is due to the fact that we don't yet know exactly. This would be a great realm for many different approaches to compete.</p>
@@ -147,7 +149,6 @@
 <p>We largely owe this state of affairs to the popularity of arbitrary loops and unrestrained recursion. Nevertheless there is hope of escape: Turing incomplete constructs such as <em>list comprehension</em>, <em>foreach</em>-style iteration (together with lazy data structures and generators) and functions in the family of <em>map</em>, <em>reduce</em> and <em>filter</em> are gaining popularity and actually considered the more idiomatic means of writing repetitions in many popular programming languages such as <em>Python</em> and <em>JavaScript</em>.</p>
 <p>We find ourselves in a situation where those who know about Turing incomplete languages are mostly academiccs who think that "computing" is about "capital A algorithms" (which are harder to represent efficiently). The hordes of software engineers in industry who know that most programs are really rather simple, think that Turing completeness is computing <em>per se</em>. I see an oportunity here. </p>
 <h3>So, what are you waiting for? Let's start terminating!</h3>
-</div>
  </section><hr>
 <footer class="post-footer"><section class="f-1"><section class="author"><p>
                 Gabriel Pickard
@@ -166,7 +167,7 @@
             </section></section></footer></article>
 </div>
 </main><footer id="site-footer"><div class="container">
-            <p>Contents © 2020         <a href="mailto:info@gabrielpickard.com">Gabriel Pickard</a>  </p>
+            <p>Contents © 2023         <a href="mailto:info@gabrielpickard.com">Gabriel Pickard</a>  </p>
             
         </div>
     </footer><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">

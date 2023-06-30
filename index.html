@@ -41,8 +41,7 @@
         by
                 Gabriel Pickard
         </p>
-    </header><section class="post-excerpt"><div>
-<p>As we software engineers grow up, we are taught early on (like in kindergarten) to associate Turing (equivalent) machines with computation <em>per se</em>: It's the paradigm that the vast majority of programming languages aspire to and that many more which don't aspire to fall into <a href="https://beza1e1.tuxen.de/articles/accidentally_turing_complete.html">accidentally</a>. If you grew up like me, you probably came to believe that Turing completeness was necessary to build any serious programs and that Turing incomplete languages were either toys, parsing tools or config files. Well -- you maybe heard that <em>SQL</em> was Turing incomplete but not thought much of it.</p>
+    </header><section class="post-excerpt"><p>As we software engineers grow up, we are taught early on (like in kindergarten) to associate Turing (equivalent) machines with computation <em>per se</em>: It's the paradigm that the vast majority of programming languages aspire to and that many more which don't aspire to fall into <a href="https://beza1e1.tuxen.de/articles/accidentally_turing_complete.html">accidentally</a>. If you grew up like me, you probably came to believe that Turing completeness was necessary to build any serious programs and that Turing incomplete languages were either toys, parsing tools or config files. Well -- you maybe heard that <em>SQL</em> was Turing incomplete but not thought much of it.</p>
 <p>Well, I have come to tell you that these matters aren't quite the way they seem: Turing incomplete languages can in fact be powerful enough to support pretty much any programming task you or I or any web developer, or data scientist, or devops engineer would be faced with today. I will also tell you that Turing incompleteness is very promising to drive a true leap forward in the art of software engineering, on par with the likes of garbage collection or structured programming.</p>
 <p>The goal is to leverage Turing incompleteness for:</p>
 <ul>
@@ -107,20 +106,23 @@
 <p>[reduce] is actually the one I've always hated most, because, apart from a few examples involving <em>+</em> or <em>*</em>, almost every time I see a <em>reduce()</em> call with a non-trivial function argument, I need to grab pen and paper to diagram what's actually being fed into that function before I understand what the <em>reduce()</em> is supposed to do</p>
 </blockquote>
 <p>He has a point, but consider the following code:</p>
-<pre class="code literal-block"><span class="nb">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">:</span> <span class="n">foo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">),</span> <span class="n">coll</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
-</pre>
+<div class="code"><pre class="code literal-block"><span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">:</span> <span class="n">foo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">),</span> <span class="n">coll</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+</pre></div>
+
 <p>This is equivalent to / syntactic sugar for:</p>
-<pre class="code literal-block"><span class="n">x</span> <span class="o">=</span> <span class="n">val</span>
+<div class="code"><pre class="code literal-block"><span class="n">x</span> <span class="o">=</span> <span class="n">val</span>
 <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">coll</span><span class="p">:</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">foo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</pre>
+</pre></div>
+
 <p>As such it of course makes sense to <em>not</em> use the explicit <em>reduce</em> function througout most Python code and instead use the pretty syntax. Any Turing incomplete language aiming for user friendliness would aim for similarly readable constructs, either via macros or built-ins. Here's an example <em>pythonic</em> nested reduce:</p>
-<pre class="code literal-block"><span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">nested_list</span><span class="p">):</span>
+<div class="code"><pre class="code literal-block"><span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">nested_list</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">item</span> <span class="n">nested</span> <span class="ow">in</span> <span class="n">nested_list</span> <span class="k">with</span> <span class="n">result</span> <span class="o">=</span> <span class="p">[]:</span>
         <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">result</span>
-</pre>
+</pre></div>
+
 <h3>Leveraging Turing incompleteness</h3>
 <p>Above I have outlined some <em>very simple</em> constructs without fancy type/termination checking, which already can handle the vast majority of retail programmer use cases. This is good news, because once we start down the happy road of tractable language semantics and gain more experience, it stands to reason that even more intricate, efficiency sensitive "capital A algorithms" will be supported.</p>
 <p>I have shown that it's not too hard to build a Turing incomplete language. What I haven't yet outlined is how to leverage Turing incompleteness. Partially, this is due to the fact that we don't yet know exactly. This would be a great realm for many different approaches to compete.</p>
@@ -145,7 +147,6 @@
 <p>We largely owe this state of affairs to the popularity of arbitrary loops and unrestrained recursion. Nevertheless there is hope of escape: Turing incomplete constructs such as <em>list comprehension</em>, <em>foreach</em>-style iteration (together with lazy data structures and generators) and functions in the family of <em>map</em>, <em>reduce</em> and <em>filter</em> are gaining popularity and actually considered the more idiomatic means of writing repetitions in many popular programming languages such as <em>Python</em> and <em>JavaScript</em>.</p>
 <p>We find ourselves in a situation where those who know about Turing incomplete languages are mostly academiccs who think that "computing" is about "capital A algorithms" (which are harder to represent efficiently). The hordes of software engineers in industry who know that most programs are really rather simple, think that Turing completeness is computing <em>per se</em>. I see an oportunity here. </p>
 <h3>So, what are you waiting for? Let's start terminating!</h3>
-</div>
     </section><footer class="post-footer"><span>
 
               
@@ -156,8 +157,7 @@
         by
                 Gabriel Pickard
         </p>
-    </header><section class="post-excerpt"><div>
-<h3>The RPG from Hell</h3>
+    </header><section class="post-excerpt"><h3>The RPG from Hell</h3>
 <p>Role-playing games seem to have an obsession with underground lairs full of monsters. (<em>Dungeons &amp; Dragons</em> even has it in the name.)
 As a kid, I remember watching my brother playing <em>Diablo II</em> on his PC. Everything was droopy, gloomy, scary and dark. -- And that was just at the surface level! Then he descended into one of the dungeons, where the real action was! <em>It was oppressively horrifying to my childish soul.</em> There I sat with my eyes glazed over, my clammy little hands clenching the sides of my deeply unfashionable corduroy thrift store pants, transfixed yet wondering: Why would anyone want to go down there into those dungeons? There's nothing there! Only monsters! Why not just stay at the surface? Maybe hide, maybe get the Dark Lord's phone number and broker a deal from the safety of the village? How would that sound?</p>
 <p>This is how I generally have felt when approaching a new piece of technology. Transfixed, but wondering how many dead-ends, unsolvable problems and wasted hours await me. I'd <em>much</em> rather spend time at the surface, learning about the theory, capability and higher-minded concepts. I <em>do not</em>, as a rule, favor getting my hands dirty.</p>
@@ -213,7 +213,6 @@ Before, he's achieving, he's meeting deadlines, he's outrunning the greatest dea
 4. Know what to punch into Google when there's a problem.</p>
 <p>I have come to taste the joy of doing manageable tasks in a code-base that I know like the back of my hand. Sometimes my requirements still turn out too steep, concepts too abstract, implementations too tricky. It remains a struggle not to drop the rock.</p>
 <p>But that's how I roll.</p>
-</div>
     </section><footer class="post-footer"><span>
 
               
@@ -224,8 +223,7 @@ Before, he's achieving, he's meeting deadlines, he's outrunning the greatest dea
         by
                 Gabriel Pickard
         </p>
-    </header><section class="post-excerpt"><div>
-<p>I've been attending a lot of video conferences lately. Some of them meet the definition of a <em>meeting</em>: 3-20 people in a room, with one person speaking while everyone else listens. This is a well-understood UX paradigm, decently served by the likes of Zoom, Google Hangouts and Jitsi and originated in the business world as a natural corollary to conference calls over the telephone.</p>
+    </header><section class="post-excerpt"><p>I've been attending a lot of video conferences lately. Some of them meet the definition of a <em>meeting</em>: 3-20 people in a room, with one person speaking while everyone else listens. This is a well-understood UX paradigm, decently served by the likes of Zoom, Google Hangouts and Jitsi and originated in the business world as a natural corollary to conference calls over the telephone.</p>
 <h3>Zoom parties are pathetic</h3>
 <p>A lot of my recent video calls do not <strong>at all</strong> fit into the <em>video-conferencing</em> paradigm: They are virtual social gatherings, intended to fulfill the need for community, human connection and fun in times of social distancing. Most of them should not meet the basic criterion of a meeting: There's no agenda. Usually there's more than one topic and more than one person wanting to speak at any given time. These get-togethers are shoe-horned into a User Experience that has very little to do with their intended reality: a loose, multi-stranded interaction.  In normal social gatherings, even if it's just four or five people, there is a natural ebb-and-flow from joint conversation to breaking off to talk about something in private, or even overhearing a word and joining back in (the famed <a href="https://en.wikipedia.org/wiki/Cocktail_party_effect">cocktail party effect</a>).</p>
 <p>The <em>cocktail party effect</em> is related to a basic human need: Ambient social awareness, which makes social gatherings interesting, fulfilling and comforting. We want to know who is talking to whom. <strong>But</strong>, we don't want to be <em>forced to listen</em> to every word they say. In video calls it's so easy to get impatient, waiting for a turn to get a word in edgewise. While I love my friends, they can be tedious at times. This is exacerbated by the fact that most video conferencing apps practice active noise-suppression: They are specifically targeted at letting only one source speak at any given time. </p>
@@ -269,7 +267,6 @@ Under normal circumstances my gripes with video conferencing would have lain fal
 <p>In playing around with veeparty, I've had the growing sense that there's maybe an interesting new category of app here: Something that's decidedly not a game, but nevertheless integrates many playful / world building aspects. An app that you might even play games inside of but that fundamentally is just a simple world for people to meet in and interact.
 In a way this hearkens back to the early era of facebook apps (and perhaps there are a number of lessons to be learned from that cautionary tale).</p>
 <p>For now the plan is to keep adding simple primitives for fun interactions between friends or strangers. My app is still very rough around the edges and only supported on Desktop Firefox and Chrome, so <a href="https://veeparty.horse">check it out</a> with that in mind.</p>
-</div>
     </section><footer class="post-footer"><span>
 
               
@@ -280,8 +277,7 @@ In a way this hearkens back to the early era of facebook apps (and perhaps there
         by
                 Gabriel Pickard
         </p>
-    </header><section class="post-excerpt"><div>
-<p>So you're entering lockdown mode and now you have two questions: How long will this last? And how bad will this be for the economy? Here I provide my answer to the second question: <em>the economic and political effects of the pandemic</em>. In <a href="posts/covid19-lockdown-how-long-will-it-take-and-how-will-it-change-us">the first part of this series</a> I give an estimate of how long it will take and what it will be like for us to live through this grand experiment.</p>
+    </header><section class="post-excerpt"><p>So you're entering lockdown mode and now you have two questions: How long will this last? And how bad will this be for the economy? Here I provide my answer to the second question: <em>the economic and political effects of the pandemic</em>. In <a href="posts/covid19-lockdown-how-long-will-it-take-and-how-will-it-change-us">the first part of this series</a> I give an estimate of how long it will take and what it will be like for us to live through this grand experiment.</p>
 <p><em>After months of underestimating COVID19, the pendulum is finally swinging the other way. People are worried! But we need to remain calm. Mitigating this disease will indeed be very costly, but we are not looking at a bottomless pit, both in terms of time and money. This will not be the end of civilization.</em></p>
 <p><img alt="plague doctors" src="images/plague_bigger.gif"></p>
 <h3>Politics</h3>
@@ -318,7 +314,6 @@ In a way this hearkens back to the early era of facebook apps (and perhaps there
 <p>Even when the economy as a whole comes back eventually, <em>you or people you care for</em> may be very badly hurt in the mean time, because the shutdown is so harsh and mitigation measures so crude. The only way out is to <strong>self-organize in solidarity</strong>. Many people are <em>eager, eager</em> to help, if we ask for help. I will go out and help as many people around me as I can. I happen to have a little prepper supply of pandemic essentials. Particularly the old and the homeless and the lonely will need it. Even just talking to someone at a safe distance can be a good thing. I hope you'll join in helping if you can!</p>
 <h3>Environment</h3>
 <p>COVID19 is perhaps the best thing to <a href="https://www.dw.com/en/coronavirus-climate-change-pollution-environment-china-covid19-crisis/a-52647140">happen</a> to our climate within the last 100 years.</p>
-</div>
     </section><footer class="post-footer"><span>
 
               
@@ -329,8 +324,7 @@ In a way this hearkens back to the early era of facebook apps (and perhaps there
         by
                 Gabriel Pickard
         </p>
-    </header><section class="post-excerpt"><div>
-<p>So you're entering lockdown mode and now you have two questions: How long will this last? And how bad will this be for the economy? Here I will give my answer to the first question: <em>how long it will take</em>. <a href="posts/how-bad-will-it-be-economic-and-political-effects-of-covid19">The second part of this series</a> deals with the political and economic ramifications of the pandemic.</p>
+    </header><section class="post-excerpt"><p>So you're entering lockdown mode and now you have two questions: How long will this last? And how bad will this be for the economy? Here I will give my answer to the first question: <em>how long it will take</em>. <a href="posts/how-bad-will-it-be-economic-and-political-effects-of-covid19">The second part of this series</a> deals with the political and economic ramifications of the pandemic.</p>
 <p><em>After months of underestimating COVID19, the pendulum is finally swinging the other way. People are very worried! But we need to remain calm. Mitigating this disease will indeed be very costly, but we are not looking at a bottomless pit, both in terms of time and money. This will not be the end of civilization.</em></p>
 <p><img alt="plague doctors" src="images/plague_bigger.gif"></p>
 <h3>How long will it last?</h3>
@@ -365,92 +359,6 @@ Americans will have to adapt to constant controls. Will we need to track people'
 <h3>The broader picture</h3>
 <p>Lockdown measures will give way to a new reality during and after the pandemic.
 <em>If you're interested in <a href="posts/how-bad-will-it-be-economic-and-political-effects-of-covid19">the political and economic effects</a> checkout my <a href="posts/how-bad-will-it-be-economic-and-political-effects-of-covid19">part 2 article</a>.</em></p>
-</div>
-    </section><footer class="post-footer"><span>
-
-              
-
-        </span>
-    </footer></article><article class="li post"><header class="post-header"><h3 class="post-title"><a href="posts/populism-how-to-start-a-3rd-party-that-can-win/">Populism: How to start a 3rd party that can win</a></h3>
-        <p class="post-time"><time datetime="2020-03-11T17:11:53-05:00">2020-03-11 17:11</time>
-        by
-                Gabriel Pickard
-        </p>
-    </header><section class="post-excerpt"><div>
-<p>This is the only way I know how to viably start a third party in the United States: <em>Steal votes from both sides.</em></p>
-<p><em>There are shared economic interests between working and salary class people on either side of the current political divide. We can form a unified voting block around issues such as healthcare and immigration, if we set aside gridlock on cultural issues. I'll explain how.</em></p>
-<h3>The do-nothing divide</h3>
-<p>American politics is divided into two distinct cultural blocks; One is more urban, the other rural, one more secular, the other church-going, bi-coastal vs flyover, etc.. We are of course talking about Democrats and Republicans. These two parties control electoral politics in the United States, without serious competition.</p>
-<p>The majority of us have very little influence on what actually gets done in Washington. This is the elite strategy of divide-and-conquer: Most states are basically "owned" by one faction, so the political elite can largely get away with paying lip-service to their constituents, paint a scary picture of the other side and then proceed to change precious little in favor of their voters. Either because it's hard to do so, or they don't care, or both.</p>
-<p>The big drawback with splitting our political factions on cultural lines is that it focuses the entire debate on topics that the government sucks at: It is very hard, as a government, to do anything about getting people to go to church. It may well be possible to promote certain talking points of church leaders, but the government can't turn hearts. Religion is a matter of civil society and moral education. It is very hard, as a government, to keep people from being bigoted and racist. We have been able to clamp down on certain limited, provable forms of discrimination, but the cultural project of tolerance and respect has been much more important and impactful on that front.</p>
-<p>Furthermore, even if we concede that politics does have an impact on public customs and morals, we must insist that this influence is slow-acting and goes both ways. Observe the movement to establish public acceptance of homosexuality: It clothed itself in the garb of a political movement for marriage equality and succeeded as such. However, this success was much more far reaching than just the political and legal sphere and its success didn't by accident coincide with the exact stage at which a vocal <em>conservative</em> gay population was gaining visibility; For all the factionalism in politics, culture is by definition a consensus-driven and consensus-seeking process.</p>
-<p>Instead of changing culture, the government is best at making budgets, setting taxes, conducting foreign policy, negotiating trade deals, administering the military, creating social support programs and business stimulus. Interestingly, these are <em>exactly the areas</em> in which there is the strongest bipartisan consensus in Washington and the least political differentiation because <strong>these are the interests of the elites</strong>.</p>
-<p>On the other hand, the above are topics of shared non-elite interest as well, which cut across cultural and geographic boundaries, <em>in joint opposition to the Washington consensus</em>. In fact, there are more differences of interest within Democratic and Republican voter blocks, between lower and upper classes, than there are between Democrats and Republicans of the same economic class.</p>
-<h3>The target demographic</h3>
-<p>Just to recap: our political discourse and our electoral contests are divided over topics that politics can't do very much about, while neglecting exactly <em>the</em> policy areas where <em>our government is very powerful and can do a lot</em>. Unsurprisingly, all this plays into the hand of the upper classes and the elite. It is a sad reality. However, there is some good news if we look at the demographic data:</p>
-<p><img alt="Income demographics" src="images/personal_income_pointout.png"></p>
-<p>According to the US Census, households making 100k/year or less make up 85% of the population and 60% of all registered voters.
-If we target all voters with an <em>individual</em> income of less than 100k (not households), this number is even greater. 
-US demographics make a decent case for populism, especially if there is at least some success in expanding the electorate. The most recent difficulties of the Sanders campaign to do just that notwithstanding.</p>
-<h3>How the election will play out</h3>
-<p>Donald Trump first got elected with the help of rust-belt country responding to an economic agenda which was anathema to the bipartisan elite consensus: Get out of international free trade deals, reinvest in domestic manufacturing, stop sending working class youth to be killed and traumatized in foreign imperial wars and do something about illegal immigration undercutting working-class wages. At this point President Trump has a mediocre to abysmal record on actually implementing these promises. Until recently he had been buoyed by a favorable economic climate, which now has gone into free fall. Most importantly he has been incompetent at infrastructure investments and all over the map on reigning in imperial wars (perhaps less evil than his predecessors, but also much less coherent). He has ineffectually fumbled his way through re-negotiating trade deals and building his border wall, which does not actually address the labor market problem of immigration. Trump lowered taxes on the wealthy and failed to salvage Obamacare, instead letting it slide even further.</p>
-<p>Where we stand right now, Bernie Sanders is the only presidential candidate with a platform that is plausibly in working people's economic interest. Unfortunately his hopes at gaining the nomination of the Democratic party have dimmed considerably. If he does not get nominated Donald Trump will win, unless his support gets suppressed by a bungled Coronavirus response -- or he himself dies of the disease. If Donald Trump gets re-elected he will be unleashed in his own craven self-interest. -- It's honestly hard to say where that would lead, other than all over the place.</p>
-<p>When Trump leaves office there will be an attempt by the elites to return the Republican party to its Washington consensus roots. Even if these efforts are inconclusive, the populist wing of the party has struggled to spread its message beyond whites and remains stuck with a kind of white identity politics. This problem is of course flipped in the populist parts of the Democratic party, which is even more out of touch with working people's interests.</p>
-<p><img alt="I'm Joe Biden and I forgot this message" src="images/biden_forgot-min.jpeg"></p>
-<h3>A party with an actual program</h3>
-<p>Throughout recent American political history it has been nigh impossible to launch a third party. Starting anything new is difficult, particularly a political movement. Moreover, most attempts at forming new parties have shot themselves in the foot by positioning their platform at the more radical fringe of one of the two big cultural blocks. As such they naturally ran the risk of "spoiler" accusations, like Ralph Nader of the Green Party, who plausibly cost Al Gore the presidency in the 2000 presidential election.</p>
-<p>This is why it will be essential to loudly and publicly steal votes from both sides. The two core positions should be:</p>
-<ul>
-<li>Universal public healthcare: Simply pick up the Sanders plan.</li>
-<li>Effectively ending illegal immigration: It disproportionally undermines working class wages and is contributing to cultural displacement in rural areas.</li>
-</ul>
-<p>To end illegal immigration I have a proposal that should be palatable to all sides while accentuating the common class interest of the majority of Americans: We should introduce an amnesty by law (not executive order!) which requires applicants to report all their employers in order to gain legal status. The law would introduce mandatory minimum prison sentences for employers who hire illegals going forward and create a Federal Labor Offenders Registry for individuals and corporations. Furthermore I would include provisions for mandatory minimum seizure of ownership in corporations that employ illegal aliens.</p>
-<p>Incidentally, seizure of ownership stakes would be a great addition to our corporate penal system. Percentages should be commensurate to the portion of an average lifetime that incarceration would take from an individual. </p>
-<p>Further core topics could include:</p>
-<ul>
-<li>Bring our troops back home and end forever wars: An entirely uncontroversial position for almost everybody in the US except the "people who matter".</li>
-<li>Industrial policy instead of globalization: Incentivize domestic production and don't give federal contracts to off-shoring companies</li>
-<li>A broad infrastructure-investment program: rebuild roads, trains, green energy, plant trees.</li>
-<li>Strengthen families: Two year family leave, to be shared by parents and a young family home ownership program.</li>
-<li>Restructuring of all student debt.</li>
-<li>Free public colleges.</li>
-<li>End at-will employment. In a downturn I'd much rather bail out companies who employ people than banks.</li>
-<li>$15 minimum wage with automatic inflation adjustment.</li>
-<li>Ground the government by moving federal administration centers to "flyover states".</li>
-<li>A federal job guarantee. Work is a matter of human dignity.</li>
-<li>Support for unions. End "right-to-work legislation".</li>
-<li>Prosecute bankers and reinstate Glass-Steagall.</li>
-</ul>
-<p>In reality land these topics are absolute no-brainers. </p>
-<h3>Setting aside the differences</h3>
-<p>We need to cultivate a shared goal to set aside the the cultural differences within the American working electorate. I would propose leading with the argument I lay out above: Cultural issues make ineffectual political issues. When pressed, this program could be backed up by a series of simple compromise positions:</p>
-<ul>
-<li>Guns: Let gun owners have their guns, and support regulated militias as stipulated by the 2nd Amendment. States get to regulate details.</li>
-<li>Abortion: Nobody sane wants to go back to coat-hangers and sepsis. Lead with a pro-life message of promising to completely eliminate any abortions for economic reasons. Strengthen families with financial support, health-care and generous family leave.</li>
-<li>Racism and other forms of discrimination: It's the law of the land to enforce an end to discrimination, particularly when doling out federal investment.</li>
-<li>Religious freedom. Make a more differentiated case against discrimination than forcing bakers to make cakes for weddings that they don't care for.</li>
-</ul>
-<p><img alt="Epic handshake between The New Right and Socialists" src="images/epic_handshake.png"></p>
-<h3>How to start</h3>
-<p>I had hoped that a brokered convention in the Democratic party nomination would be a good catalyst for starting such a party. This scenario looks less likely by the minute, but we shall see. Joe Biden, the presumptive nominee is clearly suffering from dementia or some other form of mental deterioration. There currently is a deadly disease passing through the land which disproportionally affects the elderly, with all three, Biden, Trump and Sanders falling into that category. We may well end up with a Pence presidency. Things are in flux.</p>
-<p>A new, populist party of course cannot count on the establishment media to fairly cover its message. In order to spread the news I see several non-exclusive methods:</p>
-<p><img alt="going cabbage" src="images/cabbage.gif"></p>
-<ul>
-<li>
-<strong>Outrage and earned media</strong> (the Trump technique): Talk about stuff that the establishment may find really controversial, but most people don't really care about. Even more importantly: Viciously attack the elite. Fight. Go after their weaknesses, go after their strengths. Do this in full knowledge that they will do the same to you anyway.</li>
-<li>
-<strong>Ignore the media, seek out neglected groups</strong>, work hand-in-glove with a charitable wing / parallel organization to basically replace social services. Help organize unions, fight for childcare, build churches. This is an approach popularized by insurgent groups such as Hezbollah or Sinn Fein. I am not sure whether this strategy will work if you don't have one single oppressed cultural identity to associate with. But a modified approach might work. God knows there are a lot of neglected communities in the US.</li>
-<li>
-<strong>Usurping primaries</strong>: What's to stop a party from running two endorsed candidates in each of the big party primaries at the same time. As long as they clearly tout their loyalty to the populist cause</li>
-</ul>
-<h3>My perspective</h3>
-<p>I write this as someone who culturally stands closer to the people who generally vote for the Democratic party. I purposely circumscribe this because I'm loathe to call myself a liberal and I don't fundamentally believe in "progress" (that's a topic for another discussion). I am sympathetic to socialist positions, specifically if they are centered around democratic worker cooperatives within a market.</p>
-<p>From this perspective, I have been doing my best to consider what the most salient concerns would be for people who'd be called populist conservatives and to cater to their needs. Perhaps over-reaching, perhaps neglecting aspects that matter. If you identify as such I would be very curious to hear your perspective.</p>
-<p>I am particularly curious about one thing: Do you agree that Trump, while having his moments and sticking it to <em>some</em> elites, is largely incompetent and ineffective? Do you see yourself represented by the Republican party? What are your main gripes? This is really about making a case that is appealing to both sides of the coin.</p>
-<p>Whether you're a habitual Republican or Democrat voter, one thing is clear: Supporting a joint populist party is the strongest way for you to advance your interests and the well-being of your loved ones. Either it puts pressure on the establishment to take your needs into account, or populism wins -- or both!</p>
-<p><strong>YOU CANNOT LOSE</strong></p>
-<p><img alt="Trumpian Trump" src="images/trumpiantrump.gif"></p>
-</div>
     </section><footer class="post-footer"><span>
 
               
@@ -461,8 +369,7 @@ US demographics make a decent case for populism, especially if there is at least
         by
                 Gabriel Pickard
         </p>
-    </header><section class="post-excerpt"><div>
-<p>As a Data Scientist you usually do one of two things:
+    </header><section class="post-excerpt"><p>As a Data Scientist you usually do one of two things:
 1. You comb through a pile of numbers derived from a SQL database, S3 or an HDFS cluster, in order to answer questions like "what keeps customers from converting?" and make predictions like "How much is a given user worth?".
 2. You build Machine Learning models that do actual ongoing work in deployed applications.</p>
 <p>For both of these task groups there exists a different job title with similar job description:</p>
@@ -484,7 +391,6 @@ Also, if your models are to do real work, they usually need to be integrated int
 <p><strong>Sorry.</strong></p>
 <p>Data Science is going nowhere, it's just that if you happen to not have Data Scientists on hand at your organization, <em>don't fret, you still can get stuff done.</em></p>
 <p>But if you decide you do desperately need someone to make sweet, sweet Science to your Data; I'm a Sciencer of Data myself, possibly accepting clients. -- Or maybe I'm an ML Engineer, or something like that... Just give me a ring.</p>
-</div>
     </section><footer class="post-footer"><span>
 
               
@@ -495,8 +401,7 @@ Also, if your models are to do real work, they usually need to be integrated int
         by
                 Gabriel Pickard
         </p>
-    </header><section class="post-excerpt"><div>
-<p>Many (maybe most) of us Software Engineers are deeply involved in projects where UI and UX are very important concerns (or at least they should be). Throughout the short history of our profession, we have become more and more focused on understanding and serving the people who will actually be subjected to the stuff we build:  <strong>users</strong>. In many cases, this focus on UI/UX isn't because we particularly enjoy worrying about such matters -- no, it's simply because we have to if we want to build successful products!</p>
+    </header><section class="post-excerpt"><p>Many (maybe most) of us Software Engineers are deeply involved in projects where UI and UX are very important concerns (or at least they should be). Throughout the short history of our profession, we have become more and more focused on understanding and serving the people who will actually be subjected to the stuff we build:  <strong>users</strong>. In many cases, this focus on UI/UX isn't because we particularly enjoy worrying about such matters -- no, it's simply because we have to if we want to build successful products!</p>
 <p>There has been tremendous growth in the field of UX/UI. Without a doubt, today's applications are much more user-friendly than those from 30 years ago. Back then, users were given  <strong>features</strong>, interface be damned. It was only over time that customers came to appreciate, expect, demand and reward those applications that actually cared to consider their needs.
 <em>Consumer demand drove UX as a discipline</em>.</p>
 <p>This process has been fast in some areas, slow in others. Nowhere has it been slower than in the realm of programming tools. We coders still put up with horrid UX/UI when programming.</p>
@@ -556,7 +461,6 @@ Fundamental principles in conventional UI/UX design no longer apply when it come
 <h2>DX is worth it</h2>
 <p>Interest in this topic is growing. It's definitely worth looking into. The software industry is so big and expensive that even small improvements can have considerable impact. Furthermore, Software Engineers actually <em>do</em>  respond to better UX -- and they wield considerable purchasing power. Consider the following example:</p>
 <p>I once worked at a small company, which for regulatory reasons couldn't use the normal cloud-hosted GitHub. Our engineering department strong-armed the rest of the company to purchase on-premise GitHub Enterprise at a cost equivalent to hiring one or two additional engineers, <em>just so we could use Pull-Requests!</em> We recognized the difference it made in our productivity and we demanded it -- only the best of tools would do.</p>
-</div>
     </section><footer class="post-footer"><span>
 
               
@@ -577,7 +481,7 @@ Also this is a test post.</p>
     </footer></article>
 </div>
 </main><footer id="site-footer"><div class="container">
-            <p>Contents © 2020         <a href="mailto:info@gabrielpickard.com">Gabriel Pickard</a>  </p>
+            <p>Contents © 2023         <a href="mailto:info@gabrielpickard.com">Gabriel Pickard</a>  </p>
             
         </div>
     </footer><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
