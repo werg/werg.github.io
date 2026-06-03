@@ -8,7 +8,7 @@
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/main.css">
-<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300%7CMontserrat:700" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700" rel="stylesheet" type="text/css">
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script><link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
@@ -17,6 +17,7 @@
 <link rel="canonical" href="https://www.gabrielpickard.com/posts/programming-languages-shouldnt-and-neednt-be-turing-complete/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Gabriel Pickard">
 <link rel="prev" href="../im-not-a-tinkerer-the-painful-hardly-instructive-story-of-how-i-became-a-decent-engineer/" title="I'm not a tinkerer: The painful, hardly instructive story of how I became a decent engineer" type="text/html">
+<link rel="next" href="../ai-is-computation/" title="AI is Computation" type="text/html">
 <meta property="og:site_name" content="Gabriel Pickard">
 <meta property="og:title" content="Programming languages shouldn't and needn't be Turing complete">
 <meta property="og:url" content="https://www.gabrielpickard.com/posts/programming-languages-shouldnt-and-neednt-be-turing-complete/">
@@ -118,7 +119,7 @@
 </pre></div>
 
 <p>As such it of course makes sense to <em>not</em> use the explicit <em>reduce</em> function througout most Python code and instead use the pretty syntax. Any Turing incomplete language aiming for user friendliness would aim for similarly readable constructs, either via macros or built-ins. Here's an example <em>pythonic</em> nested reduce:</p>
-<div class="code"><pre class="code literal-block"><span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">nested_list</span><span class="p">):</span>
+<div class="code"><pre class="code literal-block"><span class="k">def</span><span class="w"> </span><span class="nf">flatten</span><span class="p">(</span><span class="n">nested_list</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">item</span> <span class="n">nested</span> <span class="ow">in</span> <span class="n">nested_list</span> <span class="k">with</span> <span class="n">result</span> <span class="o">=</span> <span class="p">[]:</span>
         <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 
@@ -167,7 +168,7 @@
             </section></section></footer></article>
 </div>
 </main><footer id="site-footer"><div class="container">
-            <p>Contents © 2023         <a href="mailto:info@gabrielpickard.com">Gabriel Pickard</a>  </p>
+            <p>Contents © 2026         <a href="mailto:info@gabrielpickard.com">Gabriel Pickard</a>  </p>
             
         </div>
     </footer><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
